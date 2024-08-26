@@ -49,7 +49,7 @@ public interface OgrenciRepository extends JpaRepository<Ogrenci, Long> {
     Ogrenci findYoungestStudent();
 
     //Öğrenciler tablosundaki en yaşlı öğrenciyi listeleyiniz.
-    String QUESTION_9 = "SELECT * FROM ogrenci ORDER BY dtarih ASC LIMIT 1";
+    String QUESTION_9 = "SELECT * FROM ogrenci ORDER BY dtarih ASC LIMIT 1;";
     @Query(value = QUESTION_9, nativeQuery = true)
     Ogrenci findElderStudent();
 
